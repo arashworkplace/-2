@@ -141,7 +141,7 @@
   <div id="startScreen" class="card">
     <h1>آزمون شبیه‌ساز ادغام بلاک عفونی ۲</h1>
     <p style="color: var(--muted); margin-bottom: 8px;">
-      طراحی‌شده بر اساس بانک سوالات مهر ۹۴، مهر ۹۸ و مهر ۱۴۰۱ + سوالات تلفیقی
+      پوشش کامل بانک سوالات ادغام عفونی ۲ (تمام ادوار) + سوالات تلفیقی
     </p>
     <div class="badges">
       <span class="badge">تعداد سوالات: ۲۷ سوال</span>
@@ -159,11 +159,12 @@
       <input type="text" id="inpCode" />
     </div>
     <div class="form-group">
-      <label for="inpForm">انتخاب دفترچه (فرم A و B دارای بودجه‌بندی یکسان و سوالات متمایز هستند):</label>
+      <label for="inpForm">انتخاب دفترچه (فرم‌های A، B و C دارای بودجه‌بندی یکسان و پوشش کامل بانک سوال هستند):</label>
       <select id="inpForm">
-        <option value="AUTO">تخصیص خودکار متوازن (فرم A یا B)</option>
+        <option value="AUTO">تخصیص خودکار متوازن (فرم A، B یا C)</option>
         <option value="A">فرم A</option>
         <option value="B">فرم B</option>
+        <option value="C">فرم C</option>
       </select>
     </div>
 
@@ -238,7 +239,7 @@
   const GAS_WEB_APP_URL = "https://script.google.com/macros/s/AKfycbwVNPjvWJoSy9DqMPPj_yokHbLiVS7tHo7_IvuR2BrPkLKrz1AJfE9FNLAQxQ_cX7oOiQ/exec";
 
   const LETTERS = ['الف', 'ب', 'ج', 'د'];
-  const STORAGE_KEY = 'sums_infectious2_exam_state_v2';
+  const STORAGE_KEY = 'sums_infectious2_exam_state_v3';
 
   let state = {
     name: '',
